@@ -1,3 +1,5 @@
+package exemplo.caneta;
+
 public class Caneta {
     String modelo;
     String cor;
@@ -10,11 +12,11 @@ public class Caneta {
         System.out.println(this.tampada);
     }
     void rabiscar(){
-if(this.tampada == true){
-System.out.println("caneta tampada");
-}else {
-    System.out.println("rabiscando");
-    }}
+        if(this.tampada == true){
+            System.out.println("caneta tampada");
+        }else {
+            System.out.println("rabiscando");
+        }}
     void tampar(){
         this.tampada = true;
 

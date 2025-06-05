@@ -1,4 +1,6 @@
-public class teste {
+package exemplo.caneta;
+
+public class ObjetoCaneta {
     public static void main(String[] args) {
         Caneta c1 = new Caneta();
         c1.cor = "azul";
@@ -9,4 +11,4 @@ public class teste {
         c1.rabiscar();
         c1.status();
     }
- }
+}
