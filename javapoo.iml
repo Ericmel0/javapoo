@@ -8,6 +8,7 @@
       <sourceFolder url="file://$MODULE_DIR$/01_classes_objetos" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/02_visibilidade" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/03_métodos_especiais" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/04_exercício" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
