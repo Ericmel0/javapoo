@@ -21,3 +21,6 @@ cria um objeto, com ele você pode definir atributos e metódos como uma receita
 ![img_2.png](img_2.png)
 
 O construct tem que ter o mesmo nome da classe
+
+
+métodos getters e setters devem ser sempre públicos

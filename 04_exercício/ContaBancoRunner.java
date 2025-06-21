@@ -8,5 +8,7 @@ public class ContaBancoRunner {
         meuBanco.conta();
         meuBanco.sacar();
         meuBanco.conta();
+        meuBanco.fecharConta();
+        meuBanco.conta();
     }
 }
