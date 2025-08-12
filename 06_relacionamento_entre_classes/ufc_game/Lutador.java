@@ -119,11 +119,9 @@ public class Lutador {
         Random rand = new Random();
         int indice = rand.nextInt(3); // 0, 1 ou 2
         String escolhaComputador = opcoes[indice];
-        System.out.println("Computador escolheu: " + escolhaComputador);
         System.out.println("pedra papel ou tesoura?");
-        String escolha = sc.next().toLowerCase();
-
-        System.out.println("adversário escolheu" + escolhaComputador);
+        String escolha = sc.nextLine().toLowerCase();
+        System.out.println("adversário escolheu " + escolhaComputador);
 
         if (escolha.equals(escolhaComputador)) {
             this.empates++;
