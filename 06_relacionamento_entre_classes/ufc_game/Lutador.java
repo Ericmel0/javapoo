@@ -3,6 +3,7 @@ import java.util.Scanner;
 import java.util.Random;
 public class Lutador {
 
+    Scanner sc = new Scanner(System.in);
     private String name;
     private String nacionalidade;
     private int idade;
@@ -13,16 +14,16 @@ public class Lutador {
     private int derrotas;
     private int empates;
 
-    public Lutador(String na, String nac, int id, float al, float pe, String ca, int vi, int de, int em){
+    public Lutador(String na, String nac, int id, float al, float pe, int vi, int de, int em){
         this.name = na;
         this.nacionalidade = nac;
         this.idade = id;
         this.altura = al;
         this.peso = pe;
-        this.categoria = ca;
         this.vitorias = vi;
         this.derrotas = de;
         this.empates = em;
+        definirCategoria();
 
     }
 
@@ -98,8 +99,22 @@ public class Lutador {
         return empates;
     }
 
+    public void definirCategoria(){
+        if (this.peso < 52.2f) {
+            this.categoria = "Inválido (muito leve)";
+        } else if (this.peso <= 70.3f) {
+            this.categoria = "Peso Leve";
+        } else if (this.peso <= 83.9f) {
+            this.categoria = "Peso Médio";
+        } else if (this.peso <= 120.2f) {
+            this.categoria = "Peso Pesado";
+        } else {
+            this.categoria = "Inválido (muito pesado)";
+        }
+    }
+
     public void lutar() {
-        Scanner sc = new Scanner(System.in);
+
         String[] opcoes = {"pedra", "papel", "tesoura"};
         Random rand = new Random();
         int indice = rand.nextInt(3); // 0, 1 ou 2
@@ -125,8 +140,26 @@ public class Lutador {
                         (escolha.equals("tesoura") && escolhaComputador.equals("pedra"))) {
             this.derrotas++;
             System.out.println("você perdeu");
-        }
+        } else{
+            System.out.println("invalido");
+
+
     }
 }
+public void apresentar(){
+    System.out.println("Nome: " + this.name);
+    System.out.println("Nacionalidade: " + this.nacionalidade);
+    System.out.println("Idade: " + this.idade);
+    System.out.println("Altura: " + this.altura);
+    System.out.println("Peso: " + this.peso);
+    System.out.println("Categoria: " + this.categoria);
+    System.out.println("Vitórias: " + this.vitorias);
+    System.out.println("Derrotas: " + this.derrotas);
+    System.out.println("Empates: " + this.empates);
+}
+
+
+}
+
 
 
