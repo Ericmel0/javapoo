@@ -112,38 +112,6 @@ public class Lutador {
             this.categoria = "Inválido (muito pesado)";
         }
     }
-
-    public void lutar() {
-
-        String[] opcoes = {"pedra", "papel", "tesoura"};
-        Random rand = new Random();
-        int indice = rand.nextInt(3); // 0, 1 ou 2
-        String escolhaComputador = opcoes[indice];
-        System.out.println("pedra papel ou tesoura?");
-        String escolha = sc.nextLine().toLowerCase();
-        System.out.println("adversário escolheu " + escolhaComputador);
-
-        if (escolha.equals(escolhaComputador)) {
-            this.empates++;
-            System.out.println("empate!");
-        } else if (
-                (escolha.equals("pedra") && escolhaComputador.equals("tesoura")) ||
-                        (escolha.equals("papel") && escolhaComputador.equals("pedra")) ||
-                        (escolha.equals("tesoura") && escolhaComputador.equals("papel"))) {
-            this.vitorias++;
-            System.out.println("você venceu");
-        } else if (
-                (escolha.equals("pedra") && escolhaComputador.equals("papel")) ||
-                        (escolha.equals("papel") && escolhaComputador.equals("tesoura")) ||
-                        (escolha.equals("tesoura") && escolhaComputador.equals("pedra"))) {
-            this.derrotas++;
-            System.out.println("você perdeu");
-        } else{
-            System.out.println("invalido");
-
-
-    }
-}
 public void apresentar(){
     System.out.println("Nome: " + this.name);
     System.out.println("Nacionalidade: " + this.nacionalidade);
@@ -155,6 +123,25 @@ public void apresentar(){
     System.out.println("Derrotas: " + this.derrotas);
     System.out.println("Empates: " + this.empates);
 }
+    public void status(){
+        System.out.println("Nome: " + this.name);
+        System.out.println("Idade: " + this.idade);
+        System.out.println("Categoria: " + this.categoria);
+        System.out.println("Vitórias: " + this.vitorias);
+        System.out.println("Derrotas: " + this.derrotas);
+        System.out.println("Empates: " + this.empates);
+    }
+
+    public void empatar(){
+        this.empates++;
+    }
+    public void perder(){
+        this.derrotas++;
+    }
+    public void ganhar(){
+        this.vitorias++;
+    }
+
 
 
 }

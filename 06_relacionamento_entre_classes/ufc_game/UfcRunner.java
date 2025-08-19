@@ -10,8 +10,12 @@ public class UfcRunner {
         l[4] = new Lutador("Mayke", "Brasil", 19, 1.68f, 85.6f, 0, 0, 0);
         l[5] = new Lutador("Pildas", "Brasil", 18, 1.79f, 64.6f, 0, 0, 0);
 
+        Luta UEC01 = new Luta();
+        UEC01.marcarLuta(l[0],l[5]);
+        UEC01.lutar();
+        UEC01.lutar();
+        UEC01.lutar();
         l[0].apresentar();
-        l[2].apresentar();
-        l[1].apresentar();
+        l[5].apresentar();
     }
 }
