@@ -12,6 +12,7 @@
       <sourceFolder url="file://$MODULE_DIR$/05_encapsulamento" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/06_relacionamento_entre_classes" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/07_herança" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/08_polimorfismo" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
