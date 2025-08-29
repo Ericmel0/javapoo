@@ -8,5 +8,9 @@ public class Runner {
         c.emitirSom();
         l.emitirSom();
         m.emitirSom();
+        c.reagir("olá");
+        c.reagir(8, 4.5f);
+        c.reagir(true);
+        c.reagir(false);
     }
 }
